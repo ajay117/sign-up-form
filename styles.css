@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    min-width: 385px;
 }
 body::before {    
     content: "";
@@ -23,7 +24,6 @@ body::before {
 }
 main {
     padding: 10px;
-    height: 90vh;
 }
 p {
     line-height: 1.5;
@@ -31,7 +31,6 @@ p {
 .brand {
     display: flex;
     background-color: rgb(107 66 66 / 40%);
-    height: 10vh;
 }
 .brand-logo {
     width: 80px;
@@ -74,14 +73,17 @@ input {
     input {
         width: 60%;
     }
+    .submit {
+        width: auto;
+    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .container {
         display: flex;
     }
     .brand {
-        min-width: 500px;
+        min-width: 400px;
         height: 100vh;
         padding-top: 250px;
         margin-right: 10px;
@@ -92,4 +94,13 @@ input {
         display: flex;
         flex-direction: column;
     }
+    .inputs > div {
+        flex-basis: 50%;
+    }
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    
 }
