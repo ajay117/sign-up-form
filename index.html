@@ -8,6 +8,9 @@
     <title>Sign Up Form</title>
 </head>
 <body>
+    <div class="bg">
+        <img src="./photo-1575089976121-8ed7b2a54265.avif" alt="">
+    </div>
     <div class="container">
         <div class="brand">
             <img class="brand-logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">
@@ -41,7 +44,7 @@
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input type="text" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        <input type="text" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Password must be at least 8 letters and should contain at least one uppercase, lowercase, number and special character.(e.g:- Aaab@123)" placeholder=" " required>
                     </div>
                     <div>
                         <label for="confirm_password">CONFIRM PASSWORD</label>
