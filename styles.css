@@ -411,7 +411,7 @@ input:focus:invalid {
         width: auto;
     }
 }
-/* 
+
 @media screen and (min-width: 1000px) {
     .container {
         display: flex;
@@ -428,12 +428,4 @@ input:focus:invalid {
         display: flex;
         flex-direction: column;
     }
-    .inputs > div {
-        flex-basis: 50%;
-    }
-    .inputs {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-    }
-} */
+} 
