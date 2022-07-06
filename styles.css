@@ -366,15 +366,16 @@ a {
     font-size: clamp(1.125rem, 5vw, 2.5rem);
     /* color: white; */
 }
-label {
-    display: inline-block;
-    width: 400px;
+label,
+input {
+    display: block;
+    width: 100%;
     font-size: clamp(1rem, 2vw, 2rem);
 }
 form div {
     margin-bottom: 7px;
 }
-input {
+.inputs div {
     width: 100%;
 }
 .submit {
@@ -391,20 +392,26 @@ input {
 input:valid {
     outline: 1px solid rgb(45, 198, 45);
 }
-input:invalid {
+input:focus:invalid {
     outline: 1px solid rgb(205, 46, 46);
 }
 
 /* Media Screen */
-@media screen and (min-width: 550px) {
-    input {
-        width: 60%;
+@media screen and (min-width: 600px) {
+    .inputs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inputs > div {
+        width: calc(50% - 10px);
+        flex: auto;
+        margin-right: 10px;
     }
     .submit {
         width: auto;
     }
 }
-
+/* 
 @media screen and (min-width: 1000px) {
     .container {
         display: flex;
@@ -429,4 +436,4 @@ input:invalid {
         flex-wrap: wrap;
         width: 70%;
     }
-}
+} */
